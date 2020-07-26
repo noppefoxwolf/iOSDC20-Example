@@ -1,0 +1,14 @@
+name: Example
+targets:
+  App:
+    platform: iOS
+    deploymentTarget: "13.0"
+    type: application
+    sources:
+      - path: App
+    settings:
+      base:
+        DEVELOPMENT_TEAM: FBQ6Z8AF3U
+        PRODUCT_BUNDLE_IDENTIFIER: dev.noppe.iOSDC20
+    dependencies:
+      - carthage: HandTracker

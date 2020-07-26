@@ -1,0 +1,2 @@
+workspace:
+	mint run xcodegen
