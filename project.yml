@@ -1,4 +1,8 @@
 name: Example
+packages:
+  BlueDress:
+    url: https://github.com/noppefoxwolf/BlueDress
+    branch: master
 targets:
   App:
     platform: iOS
@@ -10,5 +14,7 @@ targets:
       base:
         DEVELOPMENT_TEAM: FBQ6Z8AF3U
         PRODUCT_BUNDLE_IDENTIFIER: dev.noppe.iOSDC20
+        SWIFT_OBJC_BRIDGING_HEADER: App/Resources/Bridging-Header.h
     dependencies:
-      - carthage: HandTracker
+      - package: BlueDress
+      - framework: HandTracker.framework
